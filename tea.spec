@@ -1,12 +1,12 @@
 Summary:	Powerful text editor
 Summary(pl):	Edytor tekstu o du¿ych mo¿liwo¶ciach
 Name:		tea
-Version:	7.0
+Version:	8.0
 Release:	1
 License:	GPL v2
 Group:		X11/Applications/Editors
 Source0:	http://tea.linux.kiev.ua/%{name}.tar.bz2
-# Source0-md5:	006bb8478983e3c21cd07b382da45555
+# Source0-md5:	06fc752e7cdb59d23dd225290ff1d16b
 Source1:	%{name}.desktop
 URL:		http://tea.linux.kiev.ua/
 BuildRequires:	aspell-devel
