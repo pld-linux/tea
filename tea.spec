@@ -1,12 +1,12 @@
 Summary:	Powerful text editor
 Summary(pl):	Edytor tekstu o du¿ych mo¿liwo¶ciach
 Name:		tea
-Version:	3.3
+Version:	4.0
 Release:	1
 License:	GPL
 Group:		X11/Applications/Editors
 Source0:	http://tea.linux.kiev.ua/%{name}.tar.bz2
-# Source0-md5:	824dd989f47f1a5580bfb9d668489561
+# Source0-md5:	b874966f4d3910aeacaaabea7154078a
 Source1:	%{name}.desktop
 Patch0:		%{name}-Makefile.patch
 URL:		http://tea.linux.kiev.ua/
