@@ -10,6 +10,8 @@ Source0:	http://tea.linux.kiev.ua/%{name}.tar.bz2
 Source1:	%{name}.desktop
 Patch0:		%{name}-Makefile.patch
 URL:		http://tea.linux.kiev.ua/
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	gtk+2-devel >= 2.2.0
 BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -35,7 +37,6 @@ wiele wyj±tkowych cech.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 install -d $RPM_BUILD_ROOT{%{_pixmapsdir},%{_desktopdir}}
 
 %{__make} install \
