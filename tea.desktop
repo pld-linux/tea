@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=TEA
+Comment=Powerful text editor
+Comment[pl]=Edytor tekstu o dużych możliwościach
+Exec=tea
+Icon=tea.png
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=GTK;TextEditor;
+Encoding=UTF-8
+# vi: encoding=utf-8
