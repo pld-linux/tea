@@ -1,17 +1,18 @@
 Summary:	Powerful text editor
 Summary(pl):	Edytor tekstu o du¿ych mo¿liwo¶ciach
 Name:		tea
-Version:	5.1
+Version:	6.2
 Release:	1
-License:	GPL
+License:	GPL v2
 Group:		X11/Applications/Editors
 Source0:	http://tea.linux.kiev.ua/%{name}.tar.bz2
-# Source0-md5:	024e6123514b61db5add08debfb82ad3
+# Source0-md5:	884bc5fc709b521a8523c64869b47cf1
 Source1:	%{name}.desktop
-Patch0:		%{name}-Makefile.patch
 URL:		http://tea.linux.kiev.ua/
+BuildRequires:	aspell-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	gettext-devel
 BuildRequires:	gtk+2-devel >= 2:2.2.0
 BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -26,7 +27,6 @@ wiele wyj±tkowych cech.
 
 %prep
 %setup -q
-%patch0 -p1
 
 %build
 %{__aclocal}
@@ -42,7 +42,7 @@ install -d $RPM_BUILD_ROOT{%{_pixmapsdir},%{_desktopdir}}
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-install %{name}_icon_v2.png $RPM_BUILD_ROOT%{_pixmapsdir}/%{name}.png
+install pixmaps/%{name}_icon_v2.png $RPM_BUILD_ROOT%{_pixmapsdir}/%{name}.png
 install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
 
 %find_lang %{name}
@@ -52,7 +52,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-%doc AUTHORS ChangeLog FAQ NEWS README TODO doc/*
 %attr(755,root,root) %{_bindir}/*
+%{_datadir}/tea/*
 %{_desktopdir}/*
 %{_pixmapsdir}/*
