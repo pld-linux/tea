@@ -1,12 +1,12 @@
 Summary:	Powerful text editor
 Summary(pl):	Edytor tekstu o du¿ych mo¿liwo¶ciach
 Name:		tea
-Version:	8.0
+Version:	9.0
 Release:	1
 License:	GPL v2
 Group:		X11/Applications/Editors
 Source0:	http://tea.linux.kiev.ua/%{name}.tar.bz2
-# Source0-md5:	06fc752e7cdb59d23dd225290ff1d16b
+# Source0-md5:	113f9ec59e6408806ddbf3bce256e201
 Source1:	%{name}.desktop
 URL:		http://tea.linux.kiev.ua/
 BuildRequires:	aspell-devel
@@ -26,7 +26,7 @@ TEA to bardzo ma³y edytor tekstu o du¿ych mo¿liwo¶ciach, posiadaj±cy
 wiele wyj±tkowych cech.
 
 %prep
-%setup -q
+%setup -q -n %{name}-2005-April
 
 %build
 %{__aclocal}
