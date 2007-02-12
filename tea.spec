@@ -1,5 +1,5 @@
 Summary:	Powerful text editor
-Summary(pl.UTF-8):   Edytor tekstu o dużych możliwościach
+Summary(pl.UTF-8):	Edytor tekstu o dużych możliwościach
 Name:		tea
 Version:	14.2.2
 Release:	1
