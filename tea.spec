@@ -1,5 +1,5 @@
 Summary:	Powerful text editor
-Summary(pl):	Edytor tekstu o duøych moøliwo∂ciach
+Summary(pl.UTF-8):   Edytor tekstu o du≈ºych mo≈ºliwo≈õciach
 Name:		tea
 Version:	14.2.2
 Release:	1
@@ -22,9 +22,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 TEA is a very small, but powerful text editor with many unique
 features.
 
-%description -l pl
-TEA to bardzo ma≥y edytor tekstu o duøych moøliwo∂ciach, posiadaj±cy
-wiele wyj±tkowych cech.
+%description -l pl.UTF-8
+TEA to bardzo ma≈Çy edytor tekstu o du≈ºych mo≈ºliwo≈õciach, posiadajƒÖcy
+wiele wyjƒÖtkowych cech.
 
 %prep
 %setup -q
