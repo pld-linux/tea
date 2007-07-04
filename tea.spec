@@ -1,12 +1,12 @@
 Summary:	Powerful text editor
 Summary(pl.UTF-8):	Edytor tekstu o dużych możliwościach
 Name:		tea
-Version:	14.2.2
+Version:	17.0.0
 Release:	1
 License:	GPL v2
 Group:		X11/Applications/Editors
 Source0:	http://dl.sourceforge.net/tea-editor/%{name}-%{version}.tar.bz2
-# Source0-md5:	a11090f6e08f346ff0cf20284cd47af6
+# Source0-md5:	91f06d5ce93543a0b2ab99a97dcfe2d4
 Source1:	%{name}.desktop
 URL:		http://tea-editor.sourceforge.net/
 BuildRequires:	aspell-devel
