@@ -12,7 +12,7 @@ URL:		http://tea-editor.sourceforge.net/
 BuildRequires:	aspell-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	gtk+2-devel >= 2:2.2.0
 BuildRequires:	gtksourceview-devel
 BuildRequires:	pkgconfig
